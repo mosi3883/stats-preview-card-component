@@ -32,6 +32,17 @@ body {
   font-family: var(--font-secondary);
 }
 
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    width: 114rem;
+  }
+}
+
 .card {
   background-color: var(--color-desaturated-dark-blue);
   padding-bottom: 2rem;
