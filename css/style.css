@@ -124,7 +124,7 @@ body {
 }
 
 .card__text {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: var(--font-secondary);
   color: var(--color-white-trans-sm);
   line-height: 1.6;
@@ -132,7 +132,7 @@ body {
 
 @media screen and (min-width: 769px) {
   .card__text {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     text-align: left;
   }
 }
