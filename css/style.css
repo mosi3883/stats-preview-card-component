@@ -1,0 +1,188 @@
+/* @media(375px)
+@media(1440px)
+
+*/
+
+:root {
+  --color-very-dark-blue: hsl(233, 47%, 7%);
+  --color-desaturated-dark-blue: hsl(244, 38%, 16%);
+  --color-soft-violet: hsl(277, 64%, 61%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-white-trans-md: hsla(0, 0%, 100%, 0.75);
+  --color-white-trans-sm: hsla(0, 0%, 100%, 0.6);
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Lexend Deca", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5rem;
+  background-color: var(--color-very-dark-blue);
+  padding: 6rem 2rem;
+  font-family: var(--font-secondary);
+}
+
+.card {
+  background-color: var(--color-desaturated-dark-blue);
+  padding-bottom: 2rem;
+  border-radius: 5px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 769px) {
+  .card {
+    flex-direction: row-reverse;
+    padding-bottom: 0;
+  }
+}
+
+.card__img-box {
+}
+
+@media screen and (min-width: 769px) {
+  .card__img-box {
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .card__content {
+    flex: 1 0 50%;
+  }
+}
+
+.card__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(277, 64%, 61%, 0.5);
+}
+
+.card__img,
+.card__img img {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.card__content {
+  color: var(--color-white);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 769px) {
+  .card__content {
+    padding: 7.5rem;
+    margin-top: 0;
+  }
+}
+
+.card__heading {
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 769px) {
+  .card__heading {
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.card__highlight {
+  color: var(--color-soft-violet);
+}
+
+.card__text {
+  font-size: 1.7rem;
+  font-family: var(--font-secondary);
+  color: var(--color-white-trans-sm);
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 769px) {
+  .card__text {
+    font-size: 2.2rem;
+    text-align: left;
+  }
+}
+
+.card__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+@media screen and (min-width: 769px) {
+  .card__details {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8rem;
+    align-items: flex-start;
+  }
+}
+
+.card__detail {
+  color: var(--color-white-trans-sm);
+  text-transform: uppercase;
+}
+
+.card__detail h6 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+  color: var(--color-white);
+}
+
+.card__detail:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+/*
+### Primary
+
+- Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%)
+
+### Neutral
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+*/
